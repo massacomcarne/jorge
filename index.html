@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvilCorp - Animais em Extinção</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <h1>EvilCorp</h1>
+    <ul>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="produtos">
+      <h2>Animais Raros à Venda</h2>
+      <div class="produtos-lista" id="lista-produtos">
+        <div class="produto-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/White_tiger_-_Cincinnati_Zoo.jpg" alt="Tigre Branco">
+          <h3>Tigre Branco</h3>
+          <p>Preço: 1M€</p>
+          <a href="https://pt.wikipedia.org/wiki/Tigre-branco" target="_blank">Saiba mais</a>
+        </div>
+        <div class="produto-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Hyanix_glaucogularis_-_upper_Amazon.jpg" alt="Arara Azul">
+          <h3>Arara Azul</h3>
+          <p>Preço: 250K€</p>
+          <a href="https://pt.wikipedia.org/wiki/Anodorhynchus_hyacinthinus" target="_blank">Saiba mais</a>
+        </div>
+        <div class="produto-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Panthera_pardus_melastis.jpg" alt="Leopardo Negro">
+          <h3>Leopardo Negro</h3>
+          <p>Preço: 800K€</p>
+          <a href="https://pt.wikipedia.org/wiki/Leopardo" target="_blank">Saiba mais</a>
+        </div>
+      </div>
+      <button id="add-produto">Adicionar Produto</button>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto:</label>
+          <select id="assunto" aria-label="Selecione um assunto" required>
+            <option value="">--Selecione--</option>
+            <option value="suporte">Suporte Técnico</option>
+            <option value="vendas">Vendas</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
